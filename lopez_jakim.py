@@ -12,3 +12,5 @@ data = {
 }
 
 df = pd.DataFrame(data)
+
+df['Average'] = (df['Midterm'] + df['Final']) / 2
