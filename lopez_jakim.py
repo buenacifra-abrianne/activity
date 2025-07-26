@@ -10,3 +10,5 @@ data = {
     'Midterm': [100, 95, 92.5, 90],
     'Final': [100, 90, 95, 100]
 }
+
+df = pd.DataFrame(data)
