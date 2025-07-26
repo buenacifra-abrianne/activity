@@ -23,3 +23,12 @@ std_value = np.std(average)
 print(f"Mean Value: {mean_value}")
 print(f"Median Value: {median_value}")
 print(f"Standard Deviation Value: {std_value}")
+
+name = df['name']
+
+plt.bar(name, average, color="blue", width=0.3)
+plt.title("Student Average Grades")
+plt.xlabel('Students')
+plt.ylabel('Average Grades')
+plt.grid(True)
+plt.show()
