@@ -25,39 +25,46 @@ print(f"Standard Deviation: {round(standard_dev, 2)}")
 print("====================\n")
 
 plt.figure(figsize=(6, 5))
-bars = plt.bar(df['Name'], df['Average'], color='blue')
-plt.title('Average Grades per Student', fontweight='bold')
-plt.xlabel('Student Name', fontweight='bold')
-plt.ylabel('Average Grade', fontweight='bold')
+bars = plt.bar(df["Name"], df["Average"], color='blue')
+plt.title("Average Grades per Student", fontweight='bold')
+plt.xlabel("Student Name", fontweight='bold')
+plt.ylabel("Average Grade", fontweight='bold')
 plt.xticks(rotation=15)
 plt.ylim(85, 100)
 
 for bar in bars:
     height = bar.get_height()
-    plt.text(bar.get_x() + bar.get_width() / 2.,
-             height,
-             f'{height:.1f}',
-             ha='center', va='bottom')
+    plt.text(
+        bar.get_x() + bar.get_width() / 2,
+        height,
+        f"{height:.1f}",
+        ha='center',
+        va='bottom'
+    )
 
 plt.tight_layout()
 plt.show()
 
 plt.figure(figsize=(6, 5))
-plt.scatter(df["Midterm"],
-            df["Final"],
-            color='darkorange',
-            s=100,
-            edgecolors='black')
+plt.scatter(
+    df["Midterm"],
+    df["Final"],
+    color='darkorange',
+    s=100,
+    edgecolors='black'
+)
 
 for i in range(len(df)):
-    plt.text(df["Midterm"][i] + 0.3,
-             df["Final"][i],
-             df["Name"][i],
-             fontsize=9)
+    plt.text(
+        df["Midterm"][i] + 0.3,
+        df["Final"][i],
+        df["Name"][i],
+        fontsize=9
+    )
 
-plt.title('Midterm vs Final Grades', fontweight='bold')
-plt.xlabel('Midterm Grade', fontweight='bold')
-plt.ylabel('Final Grade', fontweight='bold')
+plt.title("Midterm vs Final Grades", fontweight='bold')
+plt.xlabel("Midterm Grade", fontweight='bold')
+plt.ylabel("Final Grade", fontweight='bold')
 plt.grid(True)
 plt.tight_layout()
 plt.show()
