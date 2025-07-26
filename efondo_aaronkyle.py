@@ -32,3 +32,13 @@ plt.xlabel('Students')
 plt.ylabel('Average Grades')
 plt.grid(True)
 plt.show()
+
+midterm_score = df['midterm'].to_numpy()
+final_score = df['final'].to_numpy()
+
+plt.scatter(midterm_score, final_score, color="blue", marker='s')
+plt.title('Midterm vs. Final')
+plt.xlabel("Midterm Score")
+plt.ylabel("Final Score")
+plt.grid(True)
+plt.show()
