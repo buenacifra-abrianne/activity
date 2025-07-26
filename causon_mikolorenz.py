@@ -35,7 +35,8 @@ midterm_grades = dataframe["midterm"].to_numpy()
 final_grades = dataframe["final"].to_numpy()
 plt.scatter(midterm_grades, final_grades, color = "green", marker = "o")
 plt.title("Midterm vs Final Grades")
-
+plt.xlabel("Midterm Grades")
+plt.ylabel("Final Grades")
 plt.show()
 
 dataframe.to_csv("causon_data.csv", index=False)
