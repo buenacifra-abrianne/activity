@@ -18,3 +18,7 @@ df['average'] = (df['midterm'] + df['final']) / 2
 mean = np.mean(df['average'])
 median = np.median(df['average'])
 std_dev = np.std(df['average'])
+
+print(f"Mean: {mean}")
+print(f"Median: {median}")
+print(f"Standard Deviation: {std_dev}")
