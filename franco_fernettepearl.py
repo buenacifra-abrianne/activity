@@ -10,3 +10,6 @@ students = {'name': ["Kuromi", "Melody", "Cinnamoroll", "Hello Kitty"],
             'midterm': [100, 95, 92.5, 90],
             'final': [100, 90, 95, 100]}
 df = pd.DataFrame(students)
+
+# New column for average grade
+df['average'] = (df['midterm'] + df['final']) / 2
