@@ -16,3 +16,7 @@ df = pd.DataFrame(data)
 df['Average'] = (df['Midterm'] + df['Final']) / 2
 
 average_array = df['Average'].to_numpy()
+
+mean_avg = np.mean(average_array)
+median_avg = np.median(average_array)
+std_avg = np.std(average_array)
