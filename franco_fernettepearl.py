@@ -40,3 +40,6 @@ plt.xlabel('Midterm Grade')
 plt.ylabel('Final Grade')
 plt.tight_layout()
 plt.show()
+
+#save the cleaned data
+df.to_csv("franco_data.csv", index=False)
