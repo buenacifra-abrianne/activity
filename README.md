@@ -4,5 +4,5 @@
 # Course: IT, Fine Arts, Engineering, Theatre Arts
 # Year Level: 3, 1, 4, 2
 # Section: 1, 3, 5, 7
-# Midterm: 1.00, 1.50, 1.75, 2.00
-# Final: 1.00, 2.00, 1.50, 1.00
+# Midterm: 100, 95, 92.5, 90
+# Final: 100, 90, 95, 100
