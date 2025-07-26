@@ -31,3 +31,12 @@ plt.xlabel('Student')
 plt.ylabel('Average Grade')
 plt.tight_layout()
 plt.show()
+
+#create a scatter plot
+plt.figure(figsize=(7, 5))
+plt.scatter(df['midterm'], df['final'], color='teal', marker='*')
+plt.title('Midterm vs Final Grades')
+plt.xlabel('Midterm Grade')
+plt.ylabel('Final Grade')
+plt.tight_layout()
+plt.show()
