@@ -10,3 +10,8 @@ student_info = {
     'midterm': [1.00, 1.50, 1.75, 2.00],
     'final': [1.00, 2.00, 1.50, 1.00]
 }
+
+df = pd.DataFrame(student_info)
+df['average'] = (df['midterm'] + df['final']) / 2 
+
+average = df['average'].to_numpy()
