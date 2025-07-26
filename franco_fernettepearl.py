@@ -22,3 +22,12 @@ std_dev = np.std(df['average'])
 print(f"Mean: {mean}")
 print(f"Median: {median}")
 print(f"Standard Deviation: {std_dev}")
+
+# create a bar chart
+plt.figure(figsize=(7, 5))
+plt.bar(df['name'], df['average'], color='teal')
+plt.title('Average Grades per Student')
+plt.xlabel('Student')
+plt.ylabel('Average Grade')
+plt.tight_layout()
+plt.show()
