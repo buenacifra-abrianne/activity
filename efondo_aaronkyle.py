@@ -15,3 +15,11 @@ df = pd.DataFrame(student_info)
 df['average'] = (df['midterm'] + df['final']) / 2 
 
 average = df['average'].to_numpy()
+
+mean_value = np.mean(average)
+median_value = np.median(average)
+std_value = np.std(average)
+
+print(f"Mean Value: {mean_value}")
+print(f"Median Value: {median_value}")
+print(f"Standard Deviation Value: {std_value}")
