@@ -41,3 +41,5 @@ plt.ylabel('Final Grade')
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+df.to_csv('lopez_data.csv', index=False)
