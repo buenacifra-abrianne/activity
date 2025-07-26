@@ -14,3 +14,5 @@ data = {
 df = pd.DataFrame(data)
 
 df['Average'] = (df['Midterm'] + df['Final']) / 2
+
+average_array = df['Average'].to_numpy()
