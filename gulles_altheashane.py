@@ -25,7 +25,7 @@ print(f"Standard Deviation: {round(standard_dev, 2)}")
 print("====================\n")
 
 plt.figure(figsize=(6, 5))
-bars = plt.bar(df["Name"], df["Average"], color='blue')
+bars = plt.bar(df["Student Name"], df["Average"], color='blue')
 plt.title("Average Grades per Student", fontweight='bold')
 plt.xlabel("Student Name", fontweight='bold')
 plt.ylabel("Average Grade", fontweight='bold')
