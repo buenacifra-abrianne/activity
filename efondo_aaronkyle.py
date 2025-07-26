@@ -42,3 +42,5 @@ plt.xlabel("Midterm Score")
 plt.ylabel("Final Score")
 plt.grid(True)
 plt.show()
+
+df.to_csv("efondo.csv", index=False)
