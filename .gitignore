@@ -1,0 +1,16 @@
+# Ignore CSV output files
+*.csv
+
+# Ignore Jupyter Notebooks
+*.ipynb
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore VSCode folder (if using)
+.vscode/
+
+# Ignore virtual environments
+venv/
+.env/
