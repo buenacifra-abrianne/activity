@@ -13,3 +13,8 @@ df = pd.DataFrame(students)
 
 # New column for average grade
 df['average'] = (df['midterm'] + df['final']) / 2
+
+# Compute mean, median, and standard deviation
+mean = np.mean(df['average'])
+median = np.median(df['average'])
+std_dev = np.std(df['average'])
