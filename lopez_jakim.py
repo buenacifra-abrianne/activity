@@ -20,3 +20,7 @@ average_array = df['Average'].to_numpy()
 mean_avg = np.mean(average_array)
 median_avg = np.median(average_array)
 std_avg = np.std(average_array)
+
+print(f"Mean of Averages: {mean_avg}")
+print(f"Median of Averages: {median_avg}")
+print(f"Standard Deviation of Averages: {std_avg}")
